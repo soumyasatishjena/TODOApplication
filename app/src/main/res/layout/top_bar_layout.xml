@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_six_dp"
+        android:background="@drawable/shape_splash_background">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/forty_dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/five_dp"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:paddingTop="@dimen/eight_dp"
+            android:paddingBottom="@dimen/eight_dp"
+            android:src="@drawable/ic_navigate_white"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/five_dp"
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_toStartOf="@id/textAdd"
+            android:layout_toLeftOf="@id/textAdd"
+            android:layout_toEndOf="@id/backButton"
+            android:layout_toRightOf="@id/backButton"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingTop="@dimen/three_dp"
+            android:paddingBottom="@dimen/three_dp"
+            android:text="@string/activity_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_twenty_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textAdd"
+            android:layout_width="@dimen/seventy_dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:gravity="center"
+            android:text="@string/add"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_fifteen_sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</layout>

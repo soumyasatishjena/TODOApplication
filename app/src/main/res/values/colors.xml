@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colour For  Application -->
+    <color name="colorPrimaryDark">#00AA8D</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="LightGreen">#03DAC5</color>
+    <color name="blue">#7B52C5</color>
+    <color name="hint">#515151</color>
+    <color name="textColour">#262626</color>
+    <color name="dotGrey">#ACACAC</color>
+    <color name="greyed">#DCDCDC</color>
+    <color name="searchColour">#D4EFDF</color>
+</resources>
+

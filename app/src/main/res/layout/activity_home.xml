@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.activity.HomeActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/topBarHome"
+                layout="@layout/top_bar_layout" />
+
+            <TextView
+                android:id="@+id/textHeading"
+                style="@style/Heading"
+                android:layout_below="@id/topBarHome"
+                android:text="@string/todo_item_list" />
+
+            <View
+                android:id="@+id/textHeadingBar"
+                style="@style/ViewBar"
+                android:layout_width="@dimen/one_forty_dp"
+                android:layout_below="@id/textHeading" />
+
+            <EditText
+                android:id="@+id/editSearch"
+                style="@style/EditTextProperty"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_dp"
+                android:layout_below="@id/textHeadingBar"
+                android:layout_marginStart="@dimen/twenty_five_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginEnd="@dimen/twenty_five_dp"
+                android:background="@drawable/shape_search_background"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/search"
+                android:textColorHint="@color/hint"
+                tools:ignore="Autofill" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerTodo"
+                style="@style/RecyclerView"
+                android:layout_below="@id/editSearch" />
+
+            <TextView
+                android:id="@+id/labelStatus"
+                style="@style/Heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/sixteen_dp"
+                android:gravity="center"
+                android:padding="@dimen/ten_dp"
+                android:text="@string/fetching_data_for_you"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

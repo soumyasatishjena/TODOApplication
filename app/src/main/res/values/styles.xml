@@ -1,0 +1,126 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/LightGreen</item>
+        <item name="colorPrimaryDark">@color/LightGreen</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/twenty_dp</item>
+        <item name="android:layout_marginBottom">@dimen/five_dp</item>
+        <item name="android:layout_marginStart">@dimen/ten_dp</item>
+        <item name="android:layout_marginLeft">@dimen/ten_dp</item>
+        <item name="android:layout_marginEnd">@dimen/ten_dp</item>
+        <item name="android:layout_marginRight">@dimen/ten_dp</item>
+        <item name="android:paddingStart">@dimen/fifteen_dp</item>
+        <item name="android:paddingEnd">@dimen/five_dp</item>
+        <item name="android:paddingLeft">@dimen/fifteen_dp</item>
+        <item name="android:paddingRight">@dimen/five_dp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textStart</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_twenty_two_sp</item>
+    </style>
+
+    <style name="ViewBar">
+        <item name="android:layout_height">@dimen/eight_dp</item>
+        <item name="android:layout_marginStart">@dimen/twenty_five_dp</item>
+        <item name="android:layout_marginLeft">@dimen/twenty_five_dp</item>
+        <item name="android:background">@drawable/shape_bar</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/ten_dp</item>
+        <item name="android:layout_marginEnd">@dimen/ten_dp</item>
+        <item name="android:layout_marginLeft">@dimen/ten_dp</item>
+        <item name="android:layout_marginRight">@dimen/ten_dp</item>
+        <item name="android:layout_marginTop">@dimen/ten_dp</item>
+        <item name="android:layout_marginBottom">@dimen/twelve_dp</item>
+        <item name="android:padding">@dimen/five_dp</item>
+    </style>
+
+    <style name="CardViewProperty" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardElevation">@dimen/three_dp</item>
+    </style>
+
+    <style name="CardTextTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/five_dp</item>
+        <item name="android:layout_marginStart">@dimen/five_dp</item>
+        <item name="android:layout_marginEnd">@dimen/five_dp</item>
+        <item name="android:layout_marginLeft">@dimen/ten_dp</item>
+        <item name="android:layout_marginRight">@dimen/ten_dp</item>
+        <item name="android:textSize">@dimen/text_eighteen_sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textStart</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:padding">@dimen/five_dp</item>
+    </style>
+
+    <style name="TextSubHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/twenty_dp</item>
+        <item name="android:layout_marginTop">@dimen/fifteen_dp</item>
+        <item name="android:layout_marginLeft">@dimen/twenty_dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:textColorHint">@color/textColour</item>
+        <item name="android:textColor">@color/dotGrey</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">@dimen/text_fifteen_sp</item>
+    </style>
+
+    <style name="EditTextProperty">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/five_dp</item>
+        <item name="android:layout_marginBottom">@dimen/three_dp</item>
+        <item name="android:layout_marginStart">@dimen/twenty_dp</item>
+        <item name="android:layout_marginLeft">@dimen/twenty_dp</item>
+        <item name="android:layout_marginEnd">@dimen/twenty_dp</item>
+        <item name="android:layout_marginRight">@dimen/fifteen_dp</item>
+        <item name="android:paddingStart">@dimen/ten_dp</item>
+        <item name="android:paddingLeft">@dimen/ten_dp</item>
+        <item name="android:paddingEnd">@dimen/ten_dp</item>
+        <item name="android:paddingRight">@dimen/ten_dp</item>
+        <item name="android:paddingTop">@dimen/eight_dp</item>
+        <item name="android:paddingBottom">@dimen/eight_dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textSize">@dimen/text_fourteen_sp</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:textColor">@color/textColour</item>
+        <item name="android:textColorHint">@color/dotGrey</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:background">@drawable/shape_edit_text_background</item>
+    </style>
+
+    <style name="ShapeButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/forty_dp</item>
+        <item name="android:paddingStart">@dimen/twenty_five_dp</item>
+        <item name="android:paddingEnd">@dimen/twenty_five_dp</item>
+        <item name="android:paddingLeft">@dimen/twenty_five_dp</item>
+        <item name="android:paddingRight">@dimen/twenty_five_dp</item>
+        <item name="android:paddingTop">@dimen/ten_dp</item>
+        <item name="android:paddingBottom">@dimen/ten_dp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_fifteen_sp</item>
+        <item name="android:background">@drawable/shape_done_button</item>
+    </style>
+</resources>

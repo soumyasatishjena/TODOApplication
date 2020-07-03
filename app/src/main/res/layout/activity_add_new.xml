@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.activity.AddNewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/topBarItem"
+            layout="@layout/top_bar_layout" />
+
+        <TextView
+            android:id="@+id/textHeading"
+            style="@style/Heading"
+            android:layout_below="@id/topBarItem"
+            android:text="@string/add_to_do_item" />
+
+        <View
+            android:id="@+id/textHeadingBar"
+            style="@style/ViewBar"
+            android:layout_width="@dimen/one_thirty_dp"
+            android:layout_below="@id/textHeading" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/TextSubHeading"
+            android:layout_below="@id/textHeadingBar"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:text="@string/title" />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            style="@style/EditTextProperty"
+            android:layout_height="@dimen/forty_dp"
+            android:layout_below="@id/textTitle"
+            android:hint="@string/enter_title"
+            android:inputType="text"
+            android:minLines="1"
+            android:paddingTop="@dimen/five_dp"
+            android:paddingBottom="@dimen/five_dp"
+            android:singleLine="true"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textDesc"
+            style="@style/TextSubHeading"
+            android:layout_below="@id/editTextTitle"
+            android:text="@string/description" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            style="@style/EditTextProperty"
+            android:layout_below="@id/textDesc"
+            android:gravity="start"
+            android:hint="@string/enter_description"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="false"
+            android:minLines="10"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textCancel"
+            style="@style/ShapeButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/twenty_five_dp"
+            android:layout_marginLeft="@dimen/twenty_five_dp"
+            android:background="@drawable/shape_cancel_button_dialog"
+            android:text="@string/cancel" />
+
+        <TextView
+            android:id="@+id/textDone"
+            style="@style/ShapeButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/twenty_five_dp"
+            android:layout_marginRight="@dimen/twenty_five_dp"
+            android:background="@drawable/shape_done_button"
+            android:text="@string/done"
+            android:textColor="@color/colorWhite" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

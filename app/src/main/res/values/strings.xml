@@ -1,0 +1,19 @@
+<resources>
+    <!-- String used in Application -->
+    <string name="app_name">TODO Application</string>
+    <string name="new_to_do">New Todo Item</string>
+    <string name="add_to_do_item">Add New Item</string>
+    <string name="title">Title</string>
+    <string name="enter_title">enter title</string>
+    <string name="description">Description</string>
+    <string name="enter_description">enter description</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="activity_title">Activity Title</string>
+    <string name="add">Add</string>
+    <string name="home">Home</string>
+    <string name="todo_item_list">Todo Item List</string>
+    <string name="search">Search for Todo Items</string>
+    <string name="no_data_list_found">No Todo List Found !!!</string>
+    <string name="fetching_data_for_you">Fetching the data For You.. \n Please Wait</string>
+</resources>
